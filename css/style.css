@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .container {
@@ -47,7 +47,7 @@ body {
 .img {
   position: fixed;
   width: 100vw;
-  height: 105vh;
+  height: 105dvh;
   object-fit: cover;
 }
 
