@@ -5,11 +5,13 @@ let index = 0
 const max = textArr.length
 
 const textEl = document.querySelector('.text')
-const interval = setInterval(() => {
-  if (index === max) {
-    clearInterval(interval)
-    return
-  }
-  textEl.textContent += textArr[index]
-  index++
-}, 100)
+document.addEventListener('DOMContentLoaded', () => {
+  const interval = setInterval(() => {
+    if (index === max) {
+      clearInterval(interval)
+      return
+    }
+    textEl.textContent += textArr[index]
+    index++
+  }, 100)
+})
