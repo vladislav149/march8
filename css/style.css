@@ -23,25 +23,32 @@ body {
   padding: 2vw;
   position: relative;
   width: 70vw;
-  height: 500px;
   background-color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 3vh;
+  min-height: 50vh;
   border-radius: 15px;
+}
+
+.title {
+  margin: 0 auto;
+  width: 432px;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 
 .text {
   color: rgb(141, 0, 149);
   font-weight: 700;
   font-style: italic;
-  font-size: 30px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .author {
-  position: absolute;
-  color: rgb(255, 0, 0);
-  right: 5vw;
-  bottom: 30px;
+  color: red;
   font-size: 25px;
   font-style: italic;
+  text-align: right;
 }
 
 .img {
@@ -52,6 +59,11 @@ body {
 }
 
 @media (max-width: 768px) {
+  .title {
+    width: 375px;
+    font-size: 26px;
+  }
+  
   .text {
     font-size: 24px;
   }
@@ -63,11 +75,17 @@ body {
 }
 
 @media (max-width: 576px) {
+  .title {
+    width: 195px;
+    text-align: center;
+    font-size: 18px;
+  }
+
   .text {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .author {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
