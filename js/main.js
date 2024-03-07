@@ -7,8 +7,7 @@ const max = textArr.length
 const textEl = document.querySelector('.text')
 const interval = setInterval(() => {
   if (index === max) {
-    textEl.textContent = ''
-    index = 0
+    clearInterval(interval)
     return
   }
   textEl.textContent += textArr[index]
