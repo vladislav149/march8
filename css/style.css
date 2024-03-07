@@ -9,6 +9,7 @@
 
 body {
   font-family: "MTS Compcat", "Arial", sans-serif;
+  overflow: hidden;
 }
 
 .wrapper {
