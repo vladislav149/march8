@@ -4,7 +4,7 @@
   font-weight: 700;
   src: local("MTS Compcat"),
        url("../fonts/MTSCompact-Medium.woff2") format("woff2"),
-       url("../fonts/MTSCompact-Regular.woff") format("woff");
+       url("../fonts/MTSCompact-Medium.woff") format("woff");
 }
 
 body {
