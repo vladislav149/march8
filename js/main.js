@@ -5,7 +5,12 @@ let index = 0
 const max = textArr.length
 
 const textEl = document.querySelector('.text')
-document.addEventListener('DOMContentLoaded', () => {
+
+const a = new Image()
+a.src = 'content/q.gif'
+a.classList.add('img')
+a.onload = function () {
+  document.body.insertAdjacentElement('afterbegin', a)
   const interval = setInterval(() => {
     if (index === max) {
       clearInterval(interval)
@@ -14,4 +19,4 @@ document.addEventListener('DOMContentLoaded', () => {
     textEl.textContent += textArr[index]
     index++
   }, 100)
-})
+}
