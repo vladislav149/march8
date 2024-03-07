@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "MTS Compcat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("MTS Compcat"),
+       url("../fonts/MTSCompact-Medium.woff2") format("woff2"),
+       url("../fonts/MTSCompact-Regular.woff") format("woff");
+}
+
+body {
+  font-family: "MTS Compcat", "Arial", sans-serif;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -33,6 +46,27 @@
 .img {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 105vh;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 24px;
+  }
+
+  .author {
+    bottom: 20px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text {
+    font-size: 20px;
+  }
+
+  .author {
+    font-size: 18px;
+  }
 }

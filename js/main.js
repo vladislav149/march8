@@ -5,15 +5,15 @@ let index = 0
 const max = textArr.length
 
 const img = new Image()
-img.src = 'content/q.gif'
+img.src = 'content/petals.gif'
 img.classList.add('img')
 img.onload = function () {
   document.body.insertAdjacentElement('afterbegin', img)
   document.querySelector('.wrapper').innerHTML = `
-  <div class="container">
-        <p class="text"></p>
-        <span class="author">SmartDocs Team</span>
-      </div>
+    <div class="container">
+      <p class="text"></p>
+      <span class="author">SmartDocs Team</span>
+    </div>
   `
   const textEl = document.querySelector('.text')
 
