@@ -1,0 +1,33 @@
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../content/q.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding: 2vw;
+  position: relative;
+  width: 70vw;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.text {
+  color: rgb(141, 0, 149);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.author {
+  position: absolute;
+  color: rgb(255, 0, 0);
+  right: 50px;
+  bottom: 30px;
+  font-size: 25px;
+  font-style: italic;
+}
